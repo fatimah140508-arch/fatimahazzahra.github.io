@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e86cb3;
+            padding: 1rem 2rem;
+            height: 120px;
+        
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 38px;
+            font-weight: bold;
+            
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .navbar .nav-links li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-links li a:hover {
+            color: #252424;
+        }
+
+         /* Gaya burger menu (untuk tampilan kecil) */
+        .navbar .burger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .navbar .burger .line {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+        }
+
+         /* Media query untuk tampilan responsif */
+        @media screen and (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+            }
+
+            .navbar .nav-links.active {
+                display: flex;
+            }
+
+            .navbar .burger {
+                display: flex;
+            }
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            align-items: flex-start;
+        }
+        .card{
+            width: 50%;
+            background-color: #e3dfa4;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(142, 184, 75, 0.2);
+            margin: 25px;
+            height: 259px;
+            padding: 20px;
+            align-items: center;
+
+        }
+        .card img{
+            border-radius: 10px;
+            width: 250px;
+            height: 100%;
+            float: right;
+        }
+
+        .card img{
+            border-radius: 10px;
+            width: 200px;
+            height: 100%;
+            float: right;
+          }
+
+        .card-right img{
+            border-radius: 10px;
+            width: 100px;
+        }
+        .card a{
+          font: 23px;
+          text-decoration: none;
+          color: #252424;
+        }
+        .card h3 {
+            font-size: 20px;
+            margin: 0 0 10px 0;
+            color: #827f7f;
+        }
+        .card p {
+            font-size: 17px;
+            color: #6c757d;
+            
+        }
+
+    .h1{
+        font-size: 23px;
+        padding: 40px 40px;
+        color: #40696e;
+
+    }
+    
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">FloristBouquetz</div>
+        <ul class="nav-links">
+            <li><a href="Product,.html">Product</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="h1">
+        <h1>Buket Bunga Segar</h1>
+    </div>
+    <div class="card-container">
+        <div class="card">
+          <img src="red rose bouquet.jpeg" alt="">
+          <br><h1>Buket Bunga Mawar</h1>
+          <br><h5><p>Buket bunga mawar adalah rangkaian mawar yang
+             melambangkan cinta dan keindahan, cocok untuk berbagai
+              acara spesial seperti pernikahan atau hadiah romantis.</p></h5>
+              <br><p><h3>Rp. 450.000 </h3></p>
+          <div class="card-content"></div>
+        </div>
+
+        
+        <div class="card">
+          <img src="tulip.jpg" alt="">
+          <br><H1>Buket Bunga Bunga Tulip</H1>
+          <br><h5><p>Buket bunga tulip adalah rangkaian tulip yang 
+            melambangkan cinta, kebahagiaan, dan keanggunan, 
+            cocok untuk hadiah elegan atau acara spesial.</p></h5>
+            <br><br><p><h3>Rp. 175.000</h3></p>
+          <div class="card-content"></div>
+        </div>
+        </div>
+   
+      <div class="card-container">
+      <div class="card">
+      <img src="Sunflower 🌻.jpeg" alt="">
+      <br><H1>Buket Bunga Matahari</H1>
+      <br><h5><p>Buket bunga dengan nuansa warna tunggal, misalnya semua bunga
+         berwarna putih atau merah, memberikan kesan elegan dan serasi.</p></h5>
+         <br><br><p><h3>Rp. 110.000</h3></p>
+      <div class="card-content"></div>
+    </div>
+
+    <div class="card">
+      <img src="aster.jpg" alt="">
+      <br><H1>Buket Bunga Aster</H1>
+      <br><h5><p>Buket bunga aster adalah rangkaian bunga aster yang
+         melambangkan cinta, kesabaran, dan keindahan sederhana,
+          cocok untuk hadiah ceria dan dekorasi santai.</p></h5>
+          <br><p><h3>Rp. 325.000</h3></p>
+      <div class="card-content"></div>
+    </div>
+
+    
+   
+    
+    
+
+</div>
+</body>
+</htm

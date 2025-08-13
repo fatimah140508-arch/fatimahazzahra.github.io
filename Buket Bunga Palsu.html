@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e86cb3;
+            padding: 1rem 2rem;
+            height: 120px;
+        
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 38px;
+            font-weight: bold;
+            
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .navbar .nav-links li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-links li a:hover {
+            color: #252424;
+        }
+
+         /* Gaya burger menu (untuk tampilan kecil) */
+        .navbar .burger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .navbar .burger .line {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+        }
+
+         /* Media query untuk tampilan responsif */
+        @media screen and (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+            }
+
+            .navbar .nav-links.active {
+                display: flex;
+            }
+
+            .navbar .burger {
+                display: flex;
+            }
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            align-items: flex-start;
+        }
+        .card{
+            width: 50%;
+            background-color: #e3dfa4;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(142, 184, 75, 0.2);
+            margin: 25px;
+            height: 259px;
+            padding: 20px;
+            align-items: center;
+        
+        }
+        .card img{
+            border-radius: 10px;
+            width: 250px;
+            height: 100%;
+            float: right;
+        }
+
+        .card img{
+            border-radius: 10px;
+            width: 200px;
+            height: 100%;
+            float: right;
+          }
+          .product p {
+            font-size: 14px;
+            color: #333;
+        }
+        .product .price {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        .card-right img{
+            border-radius: 10px;
+            width: 100px;
+        }
+        .card a{
+          font: 23px;
+          text-decoration: none;
+          color: #242020;
+        }
+        .card h3 {
+            font-size: 20px;
+
+            margin: 0 0 10px 0;
+            color: #827f7f;
+        }
+        .card p {
+            font-size: 17px;
+            color: #6c757d;
+            
+        }
+
+    .h1{
+        font-size: 23px;
+        padding: 40px 40px;
+        color: #40696e;
+
+    }
+    .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+   
+}
+
+    
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">FloristBouquetz</div>
+        <ul class="nav-links">
+            <li><a href="Product,.html">Product</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="h1">
+        <h1>Buket Bunga Palsu</h1>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="bunga palsu bohemia.jpg" alt="">
+            <h1>Buket Palsu Bohemia</h1>
+            <br><h4><p>Rangkaian bunga dengan berbagai jenis dan warna, sering kali mencakup
+                bunga eksotis atau wildflower palsu, memberikan kesan bebas dan penuh warna.</p></h4>
+              <br><br> <p><h3>  Rp. 85.000</h3></p>
+          <div class="card-content"></div>
+        </div>
+        
+
+        
+        <div class="card">
+          <img src="palsu modern.jpeg" alt="">
+          <H1>Buket Bunga Palsu Modern</H1>
+          <br><h5><p>Menggunakan bunga palsu dengan desain lebih kontemporer, seperti bunga
+             tropis atau tanaman hias, memberikan kesan futuristik dan dinamis.</p></h5>
+             <br><br><p><h3>Rp. 95.000</h3></p>
+          <div class="card-content"></div>
+        </div>
+        </div>
+   
+      <div class="card-container">
+      <div class="card">
+      <img src="palsu rustik.jpeg" alt="">
+      <br><H1>Buket Bunga Palsu Rustik</H1>
+      <br><h5><p>Menggabungkan bunga palsu dengan elemen alami seperti daun kering atau jerami,
+         memberikan nuansa rustic yang alami. Cocok untuk pernikahan atau acara bertema pedesaan.</p></h5>
+        <br><br><p><h3>Rp. 65.000</h3></p>
+      <div class="card-content"></div>
+    </div>
+
+    <div class="card">
+      <img src="palsu wedding.jpg" alt="">
+      <br><H1>Buket Bunga Palsu wedding</H1>
+      <br><h5><p>Buket khusus untuk pernikahan,
+         biasanya dihiasi dengan kombinasi
+         bunga palsu elegan seperti mawar, peony, dan baby’s breath,
+          sering dilengkapi dengan pita atau kristal.</p></h5>
+          <br><br><p><h3>Rp. 150.000</h3></p>
+      <div class="card-content"></div>
+    </div>
+
+    
+   
+    
+    
+
+</div>
+</body>
+</htm

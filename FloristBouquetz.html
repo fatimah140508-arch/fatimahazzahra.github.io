@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <style>
+          /* Reset dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Gaya navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f783c3;
+      padding: 35px 40px;
+    }
+
+    .logo {
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #d4e880;
+    }
+
+    /* Gaya burger menu (untuk tampilan kecil) */
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .burger .line {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 3px 0;
+      transition: transform 0.3s;
+    }
+
+    /* Media query untuk tampilan responsif */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .burger {
+        display: flex;
+      }
+    }
+
+    /* Container card */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: auto;
+      max-width: 1250px;
+      font-size: 25px;
+      color: #c283c2;
+    }
+
+    /* Card */
+    .card {
+      background-color: #d8ecf8;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 350px;
+
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Card image */
+    .card img {
+      width: auto;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* Card content */
+    .card-content {
+      padding: 15px;
+    }
+    .card .price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+        }
+    .card-content h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card-content p {
+      font-size: 1em;
+      color: #cc669e;
+      margin-bottom: 15px;
+    }
+    .h1{
+        font-size: 30px;
+        padding: 40px 40px;
+        color: #cc669e;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">FloristBouquetz</div>
+        <ul class="nav-links">
+            <li><a href="Product,.html">Product</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="h1">
+        <h1> Buket bunga</h1>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="6345f5fa-46e8-4e67-aa3a-e62760776df3.jpeg" alt="ft">
+            <img src="Pastel Pipe Bouquet.jpeg" alt="">
+            <img src="download (10).jpeg" alt="">
+            <img src="It's so beautiful_.jpeg" alt="">
+            <img src="Buket Bunga Tulip.jpeg" alt="">
+            <img src="Lego flowers.jpeg" alt="">
+            <img src="eb1e5c7a-6d2c-49c6-9263-b8c651fd02fa.jpeg" alt="">
+            <img src="uang kombinasi.jpeg" alt="" >
+            <img src="kering 1.jpg" alt="" >
+            <div class="card-content"></div>
+            <p>Buket bunga adalah rangkaian bunga yang ditata dengan estetika untuk 
+                memberikan kesan indah, romantis, atau menyenangkan. Buket ini 
+                biasanya terdiri dari berbagai jenis bunga, dedaunan, dan elemen 
+                dekoratif lainnya yang disusun sedemikian rupa dalam bentuk bundar, 
+                lonjong, atau sesuai tema</p>
+        </div>
+</body>
+</html>
